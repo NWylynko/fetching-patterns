@@ -1,6 +1,6 @@
 
 const fetchTime = async () => {
-  const response = await fetch(`https://fetching-patterns.vercel.app/api/time`)
+  const response = await fetch('https://fetching-patterns.vercel.app/api/time', { cache: "default" })
   return response.json()
 }
 
@@ -10,7 +10,11 @@ export const DefaultAsyncFetch = async () => {
   return (
     <div>
       <h3>Default Async Fetch</h3>
-      <pre>{JSON.stringify(time, null, 2)}</pre>
+      <code>Code: {`
+        fetch('...', { cache: "default" })
+      `}</code>
+      <pre>Response: {JSON.stringify(time, null, 2)}</pre>
+      <span>Running in a RSC async function, this runs on every page refresh.</span>
     </div>
   )
 }
