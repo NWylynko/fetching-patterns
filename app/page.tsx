@@ -1,7 +1,10 @@
-export default function Home() {
+import { DefaultAsyncFetch } from "../components/DefaultAsyncFetch";
+
+export default async function Home() {
   return (
     <div>
-      <span>Hello World</span>
+      <h2>Fetching Patterns</h2>
+      <DefaultAsyncFetch />
     </div>
   )
 }

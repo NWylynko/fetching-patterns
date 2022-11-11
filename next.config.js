@@ -4,6 +4,9 @@ const nextConfig = {
     appDir: true,
     runtime: "experimental-edge"
   },
+  typescript: {
+    ignoreBuildErrors: true
+  }
 }
 
 module.exports = nextConfig
