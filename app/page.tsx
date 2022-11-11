@@ -10,11 +10,11 @@ export default async function Home() {
     <div>
       <h2>Fetching Patterns</h2>
       <DefaultAsyncFetch />
-      <ForceCacheAsyncFetch />
-      <NoCacheAsyncFetch />
-      <NoStoreAsyncFetch />
+      {/* <ForceCacheAsyncFetch /> */}
+      {/* <NoCacheAsyncFetch /> */}
+      {/* <NoStoreAsyncFetch /> */}
       {/* <OnlyIfCachedAsyncFetch /> */}
-      <ReloadAsyncFetch />
+      {/* <ReloadAsyncFetch /> */}
     </div>
   )
 }
