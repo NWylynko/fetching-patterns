@@ -1,6 +1,7 @@
 import Link from "next/link"
 import "./globals.css"
 import styles from "./layout.module.css"
+import { AnalyticsWrapper } from './components/analytics';
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
           {/* <Link href="/use-fetch" className={styles.link}>Use Fetch</Link> */}
         </nav>
         {children}
+        <AnalyticsWrapper />
       </body>
     </html>
   )
