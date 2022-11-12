@@ -12,7 +12,7 @@ export default async function Home() {
       <DefaultAsyncFetch />
       <ForceCacheAsyncFetch />
       <NoCacheAsyncFetch />
-      {/* <NoStoreAsyncFetch /> */}
+      <NoStoreAsyncFetch />
       {/* <OnlyIfCachedAsyncFetch /> */}
       {/* <ReloadAsyncFetch /> */}
     </div>
