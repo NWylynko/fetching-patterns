@@ -1,6 +1,6 @@
 
 const fetchTime = async () => {
-  const response = await fetch('https://fetching-patterns.vercel.app/api/time', { cache: "only-if-cached", credentials: "same-origin" })
+  const response = await fetch('https://fetching-patterns.vercel.app/api/time?type=only-if-cached', { cache: "only-if-cached", credentials: "same-origin" })
   return response.json()
 }
 
