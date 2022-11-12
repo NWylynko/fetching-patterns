@@ -3,14 +3,14 @@
 import { use } from "react"
 
 const fetchTime = async () => {
-  const response = await fetch('/api/time?type=use-fetch')
+  const response = await fetch('https://fetching-patterns.vercel.app/api/time?type=use-fetch')
   const result = await response.json()
   return result
 }
 
 const UseFetch = () => {
 
-  const time = use(fetchTime())
+  // const time = use(fetchTime())
 
   return (
     <main>
@@ -19,7 +19,7 @@ const UseFetch = () => {
         fetch('...')
         const time = use(fetchTime())
       `}</code>
-      <pre>Response: {JSON.stringify(time, null, 2)}</pre>
+      {/* <pre>Response: {JSON.stringify(time, null, 2)}</pre> */}
     </main>
   )
 }
