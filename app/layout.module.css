@@ -5,6 +5,13 @@
   max-width: 800px;
 }
 
+@media (max-width: 450px) {
+  .nav {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
 .link {
   border: 2px solid black;
   border-radius: 8px;
