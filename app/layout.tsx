@@ -12,6 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Fetching Patterns</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
         <Link href="/" className={styles.home}><h2 className={styles.home}>Next 13 Fetching Patterns</h2></Link>
