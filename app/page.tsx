@@ -1,7 +1,7 @@
 export default async function Home() {
   return (
     <>
-      <h4>Click on one of the links above</h4>
+      <h4>Click on one of the links above to find out how they work.</h4>
       <a href="https://github.com/nwylynko/fetching-patterns" style={{ color: "black", display: "block", marginBottom: 8 }}>Github Repo</a>
       <span>Versions</span>
       <ul>
