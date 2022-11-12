@@ -11,7 +11,7 @@ export default async function Home() {
       <h2>Fetching Patterns</h2>
       <DefaultAsyncFetch />
       <ForceCacheAsyncFetch />
-      {/* <NoCacheAsyncFetch /> */}
+      <NoCacheAsyncFetch />
       {/* <NoStoreAsyncFetch /> */}
       {/* <OnlyIfCachedAsyncFetch /> */}
       {/* <ReloadAsyncFetch /> */}
