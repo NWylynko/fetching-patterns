@@ -16,10 +16,11 @@ const UseFetch = () => {
     <main>
       <h3>Use Fetch</h3>
       <code>Code: {`
-        fetch('...')
-        const time = use(fetchTime())
+        fetch('...');
+        const time = use(fetchTime());
       `}</code>
       {/* <pre>Response: {JSON.stringify(time, null, 2)}</pre> */}
+      <span>This works {'"'}fine{'"'} on client navigation, send 3 requests to the api, but no more (atleast without any state or effects), But on page load it just fires off non-stop.</span>
     </main>
   )
 }

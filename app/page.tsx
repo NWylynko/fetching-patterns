@@ -14,6 +14,7 @@ export default async function Home() {
             appDir: true,
           }
         }, null, 2)}</pre>
+      <span>Made out of interest by <a href="https://nick.wylynko.com">Nick Wylynko</a></span>
     </>
   )
 }
