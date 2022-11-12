@@ -16,7 +16,7 @@ const RevalidationAsyncFetch = async () => {
       <pre>Response: {JSON.stringify(time, null, 2)}</pre>
       <h4>In Production:</h4>
       <ul>
-        <li>Runs once at build time, if build time {'<'} current time - revalidate then it re-fetches.</li>
+        <li>Runs once at build time, on request if build time {'<'} current time - revalidate then it re-fetches.</li>
       </ul>
       <h4>In Development:</h4>
       <ul>

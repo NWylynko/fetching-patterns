@@ -18,6 +18,7 @@ const NoStoreAsyncFetch = async () => {
       <ul>
         <li>This will call the fetch on every single page request.</li>
         <li>This wont fetch again if its already been fetched and your just navigation through links on the page.</li>
+        <li>If the user clicks on the link before the client-side react hydration, it will act like a full page request, meaning it will do a re-fetch server-side.</li>
       </ul>
       <span>This can be dangerous if the api your calling has a limit.</span>
     </main>
