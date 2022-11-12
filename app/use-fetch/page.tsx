@@ -3,7 +3,7 @@
 import { use } from "react"
 
 const fetchTime = async () => {
-  const response = await fetch('/api/time')
+  const response = await fetch('/api/time?type=use-fetch')
   const result = await response.json()
   return result
 }
@@ -14,6 +14,7 @@ const UseFetch = () => {
 
   return (
     <main>
+      <h3>Use Fetch</h3>
       <code>Code: {`
         fetch('...')
         const time = use(fetchTime())
