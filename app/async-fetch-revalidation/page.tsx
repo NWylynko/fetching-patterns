@@ -8,14 +8,22 @@ const RevalidationAsyncFetch = async () => {
   const time = await fetchTime();
 
   return (
-    <div>
+    <main>
       <h3>Revalidation Async Fetch</h3>
       <code>Code: {`
         fetch('...', { next: { revalidate: 10 } })
       `}</code>
       <pre>Response: {JSON.stringify(time, null, 2)}</pre>
-      <span>In development this re-fetches on every page load, no respecting the revalidation time, essentially doing no-store. In Production this works the same way as force-cache, calling first at build-time (the api needs to be available during build) and then on request it checks how long ago it was fetched, if its more than the revalidation time (in seconds) it re-fetches and returns the response the user.</span>
-    </div>
+      <h4>In Production:</h4>
+      <ul>
+        <li>Runs once at build time, if build time {'<'} current time - revalidate then it re-fetches.</li>
+      </ul>
+      <h4>In Development:</h4>
+      <ul>
+        <li>Runs on every page load, like no-store</li>
+        <li>Once cached client-side, navigating doesnt re-fetch</li>
+      </ul>
+    </main>
   )
 }
 

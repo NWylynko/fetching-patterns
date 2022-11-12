@@ -19,9 +19,7 @@ export default function RootLayout({
           <Link href="/async-fetch-no-store" className={styles.link}>Async fetch No Store</Link>
           <Link href="/async-fetch-revalidation" className={styles.link}>Async fetch Revalidation</Link>
         </nav>
-        <main>
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   )

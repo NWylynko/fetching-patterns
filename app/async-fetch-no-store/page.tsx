@@ -8,14 +8,19 @@ const NoStoreAsyncFetch = async () => {
   const time = await fetchTime();
 
   return (
-    <div>
+    <main>
       <h3>No Store Async Fetch</h3>
       <code>Code: {`
         fetch('...', { cache: "no-store" })
       `}</code>
       <pre>Response: {JSON.stringify(time, null, 2)}</pre>
-      <span>This will call the fetch on every single page request. (in both dev and prod) This can be dangerous if the api your calling has a limit. This wont fetch again if its already been fetched and your just navigation through links on the page.</span>
-    </div>
+      <h4>In Both Prod and Dev:</h4>
+      <ul>
+        <li>This will call the fetch on every single page request.</li>
+        <li>This wont fetch again if its already been fetched and your just navigation through links on the page.</li>
+      </ul>
+      <span>This can be dangerous if the api your calling has a limit.</span>
+    </main>
   )
 }
 
