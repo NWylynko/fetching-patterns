@@ -18,6 +18,7 @@ export default function RootLayout({
           <Link href="/async-fetch-force-cache" className={styles.link}>Async fetch Force Cache</Link>
           <Link href="/async-fetch-no-store" className={styles.link}>Async fetch No Store</Link>
           <Link href="/async-fetch-revalidation" className={styles.link}>Async fetch Revalidation</Link>
+          <Link href="/use-fetch" className={styles.link}>Use Fetch</Link>
         </nav>
         {children}
       </body>
