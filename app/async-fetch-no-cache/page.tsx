@@ -4,7 +4,7 @@ const fetchTime = async () => {
   return response.json()
 }
 
-export const NoCacheAsyncFetch = async () => {
+const NoCacheAsyncFetch = async () => {
   const time = await fetchTime();
 
   return (
@@ -18,3 +18,5 @@ export const NoCacheAsyncFetch = async () => {
     </div>
   )
 }
+
+export default NoCacheAsyncFetch
