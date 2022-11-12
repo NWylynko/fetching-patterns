@@ -14,7 +14,8 @@ const ForceCacheAsyncFetch = async () => {
         fetch('...', { cache: "force-cache" })
       `}</code>
       <pre>Response: {JSON.stringify(time, null, 2)}</pre>
-      <span>Unknown</span>
+      <span>In Development this will run on every page load, keeping as up to date as possible.</span>
+      <span>In Production / build this will run only once at build time, it will never fetch again.</span>
     </div>
   )
 }

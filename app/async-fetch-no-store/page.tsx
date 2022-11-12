@@ -14,7 +14,7 @@ const NoStoreAsyncFetch = async () => {
         fetch('...', { cache: "no-store" })
       `}</code>
       <pre>Response: {JSON.stringify(time, null, 2)}</pre>
-      <span>Unknown</span>
+      <span>This will call the fetch on every single request. (in both dev and prod) This can be dangerous if the api your calling has a limit.</span>
     </div>
   )
 }
