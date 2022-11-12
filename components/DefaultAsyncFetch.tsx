@@ -16,7 +16,7 @@ export const DefaultAsyncFetch = async () => {
         fetch('...', { cache: "default" })
       `}</code>
       <pre>Response: {JSON.stringify(time, null, 2)}</pre>
-      <span>Running in a RSC async function, this runs on every page refresh.</span>
+      <span>Running in a RSC async function, this fetches at build time and never again.</span>
     </div>
   )
 }
