@@ -17,7 +17,7 @@ const ForceCacheAsyncFetch = async () => {
       <h4>In Production:</h4>
       <ul>
         <li>Runs once at build time, on page request it returns this result</li>
-        <li>Runs once during request time, pre-fetches this when a link to it is on the page, and returns this result if they click on the link to navigate to it.</li>
+        <li>If another page has a {'<Link>'} component to this page, by default next will pre-fetch this page. During that prefetch, only once since the server is built, it will make another fetch, and the result of that will be whats returned in the prefetch. This means that navigating to this page and going to it from the url can have two different results. (this may be a bug)</li>
       </ul>
       <h4>In Development:</h4>
       <ul>
